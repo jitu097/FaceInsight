@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://img.pikbest.com/backgrounds/20190903/internet-face-recognition-background-picture_1902692.jpg!bw700');
+    background-size: cover;
+    background-position: center;
+}
+
+canvas {
+    position: absolute;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    canvas {
+        width: 90vw;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    canvas {
+        width: 100%;
+        height: auto;
+    }
+}
